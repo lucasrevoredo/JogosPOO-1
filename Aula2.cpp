@@ -67,7 +67,7 @@ int main(int argc, char* args[])
 		dado2 = rand() % 6 + 1;
 		dadof2 = dado2;
 
-		//Se o número lançado for maior ou igual que 4 o jogador acerta.
+		//Se o número lançado for maior ou igual que 4 o Jogador acerta.
 		if (dadof2 >= 4)
 		{
 			//Imprimindo na tela uma informação de acerto do Jogador 2.
@@ -91,7 +91,7 @@ int main(int argc, char* args[])
 			sair = true;
 
 		}
-		//Caso contrário, se não chegar a ser zero (0) de nenhum dos jogadores, o jogo continuará rodando.
+		//Caso contrário, se não chegar a ser zero (0) de nenhum dos Jogadores, o Jogo continuará rodando.
 		else system("cls");
 
 		cout << "Um dos Jogadores não resistiu aos ferimentos :(" << endl;
