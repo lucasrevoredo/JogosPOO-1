@@ -23,10 +23,10 @@ int main(int argc, char* args[])
 	cout << "Digite o nome do jogador 2:" << endl;
 	cin >> jog2;
 
-	//Enquanto 
+	//Fazendo loop.
 	while (sair == false)
 	{
-		//Caractere dos Jogadores 1 e 2.
+		//Caracteres dos Jogadores 1 e 2.
 		cout << " O			   O" << endl;
 		cout << ".T./		         \\.T." << endl;
 		cout << " ^			   ^" << endl;
