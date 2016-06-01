@@ -47,13 +47,10 @@ int main(int argc, char* args[])
 		//Se o dado cair mais que 4.
 		if (dadof1 >= 4)
 		{
-			//Imprimindo na tela uma informação de acerto do Jogador 1.
-			cout << "\Acertou";
 			//Calculando o dano da vida do Jogador 1.
 			dano1 = a2 - d1;
 			vida1 = vida1 - dano1;
 
-			cout << "\Dano: -" << dano1 << endl;
 		}
 
 		//Para o segundo jogador.
@@ -67,16 +64,22 @@ int main(int argc, char* args[])
 		dado2 = rand() % 6 + 1;
 		dadof2 = dado2;
 
-		//Se o número lançado for maior ou igual que 4 o Jogador acerta.
+		//Se o número lançado for maior ou igual que 4 o jogador acerta.
 		if (dadof2 >= 4)
 		{
-			//Imprimindo na tela uma informação de acerto do Jogador 2.
-			cout << "                        Acertou! ";
 			//Calculando o dano da vida do Jogador 2.
 			dano2 = a1 - d2;
 			vida2 = vida2 - dano2;
-			cout << "\Dano: -" << dano2 << endl;
 		}
+		//Se o dado cair em um número maior ou igual que 4 ele acerta, caso contrário, errou.
+			if (dadof2 && dadof1 >= 4)
+			{ 
+				cout << "Acertou" << "           " << " dano: -" << dano1 << endl;
+			}
+			else cout << "Errou" << endl;
+		
+			
+		
 
 		//Imprimindo informações dos Jogadores na tela.
 		cout << "A:" << a1 << "                    " << "A:" << a2 << endl;
@@ -91,11 +94,11 @@ int main(int argc, char* args[])
 			sair = true;
 
 		}
-		//Caso contrário, se não chegar a ser zero (0) de nenhum dos Jogadores, o Jogo continuará rodando.
+		//Caso contrário, se não chegar a ser zero (0) de nenhum dos jogadores, o jogo continuará rodando.
 		else system("cls");
 
 		cout << "Um dos Jogadores não resistiu aos ferimentos :(" << endl;
-		
+
 		//Estabelecendo uma condição sobre a vida dos Jogadores 1 e 2 forem menores que zero (0), imprimindo na tela a informação de que ambos perderam.
 		if (vida1 && vida2 < 0) cout << "Game Over!" << endl;
 	}
