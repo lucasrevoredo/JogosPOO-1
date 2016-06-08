@@ -7,7 +7,7 @@
 using namespace std;
 
 //Identificando Super Power.
-void imprimir_espacos(int total);  
+void imprimir_espacos(int total);
 
 int main(int argc, char* args[])
 
@@ -76,9 +76,9 @@ int main(int argc, char* args[])
 
 		//Limpando a tela.
 		system("cls");
-		
+
 		//Condição. Se o total de espaços do Jogador 1 ou do Jogador 2 for maior ou igual que 30 a tela fechará.
-		if (total1 >= 30 || total2 >= 30) 
+		if (total1 >= 30 || total2 >= 30)
 		{
 			sair = true;
 		}
@@ -88,26 +88,22 @@ int main(int argc, char* args[])
 
 
 	}
-	
+
+	//Imprimindo uma mensagem na tela.
+	cout << "<----Fim de jogo---->" << endl;
+
 	//Condição. Se o total de espaços do Jogador 1 for igual a 30, ele ganhará.
 	if (total1 = 30) cout << "O vencedor foi  " << jog1 << endl;
 
-	//Caso contrário, se o total de espaços do Jogador 1 for menor que 30, ele perderá.
-	else if (" Você perdeu, Jog1 ")
-
 	//Condição. Se o total de espaços do Jogador 2 for igual a 30, ele ganhará.
-	if (total2 = 30) cout << "O vencedor foi  " << jog2 << endl;
-	
-	//Caso contrário, se o total de espaços do Jogador 2 for menor que 30, ele perderá.
-	else if (" Você perdeu, Jog2 ")
-		
-		//Imprimindo uma mensagem na tela.
-		cout << "Fim de jogo!" << endl;
+	else if (total2 = 30) cout << "O vencedor foi  " << jog2 << endl;
+
+	//Caso o número de espaços dos Jogadores forem iguais eles empatam o Jogo.
+	else cout << " O Jogo empatou " << endl;
 
 
-		system("pause");
-		//Voltando ao início do Jogo.
-		return 0;
+	//Voltando ao início do Jogo.
+	return 0;
 }
 
 
@@ -121,6 +117,7 @@ void imprimir_espacos(int total)
 
 
 }
+
 
 
 
