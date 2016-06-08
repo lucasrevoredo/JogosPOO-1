@@ -120,7 +120,7 @@ void imprimir_espacos(int total)
 		cout << "  ";
 
 
-	}
+}
 
 
 
