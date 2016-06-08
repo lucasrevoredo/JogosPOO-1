@@ -46,6 +46,11 @@ int main(int argc, char* args[])
 		total_espacos = rand() % 3 + 1;
 		total2 = total2 + total_espacos;
 
+		//Imprimindo mensagem na tela.
+		cout << "<----Jogo de Corrida---->" << endl;
+		cout << "                                                               ~~~~CHEGADA~~~~" << endl;
+
+
 		//Imprimindo na tela o carrinho do Jogador 1.
 		cout << jog1 << endl;
 		imprimir_espacos(total1);
