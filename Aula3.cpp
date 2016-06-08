@@ -112,7 +112,7 @@ void imprimir_espacos(int total)
 
 
 	for (int qntd_espacos = 0; qntd_espacos < total; qntd_espacos++)
-		cout << "   ";
+		cout << "  ";
 
 
 	}
